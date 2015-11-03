@@ -1,0 +1,33 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sona Voice</title>
+  <!-- Dependencies -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Angular Scripts -->
+  <script src="app.js"></script>
+  <script src="about/AboutCtrl.js"></script>
+  <script src="home/HomeCtrl.js"></script>
+  <script src="extensions/ExtensionsCtrl.js"></script>
+  <script src="developers/DevelopersCtrl.js"></script>
+  <script src="router-config.js"></script>
+
+  <!-- Misc. Scripts -->
+  <script src="script.js"></script>
+</head>
+<body ng-app="app">
+  <ul>
+    <li><a ui-sref="home">home</a></li>
+    <li><a ui-sref="extensions">extensions</a></li>
+    <li><a ui-sref="about">about</a></li>
+    <li><a ui-sref="developers">developers</a></li>
+  </ul>
+  <div ui-view></div>
+  <!-- Footer w/ copyright, name, contact link -->
+</body>
+</html>
